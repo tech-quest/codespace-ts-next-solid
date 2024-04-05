@@ -1,0 +1,39 @@
+.items {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  position: relative;
+  padding-left: 1.25rem;
+}
+.label::before {
+  content: '';
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background-color: rgb(var(--theme-background));
+  border: 1px solid rgb(var(--theme-gray));
+  border-radius: 50%;
+}
+.label::after {
+  content: '';
+  position: absolute;
+  top: 0.3em;
+  left: 0.2em;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.input.checked + .label::after {
+  background-color: rgb(var(--theme-secondary));
+}

@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  margin: 0;
+  padding: 0 1.5rem;
+  background-color: rgba(var(--theme-background), 0.7);
+  z-index: 100;
+}
+.logo {
+  color: rgb(var(--theme-foreground));
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*----- Main components -----*/
+.main {
+  margin: 0 auto;
+}
+.main > *:first-child {
+  margin-top: 0;
+}
+.main > *:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  margin: 8rem 0 0;
+  padding: 3rem;
+  border-top: 1px solid rgb(var(--theme-gray));
+  text-align: center;
+}

@@ -1,0 +1,34 @@
+.select {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgb(var(--theme-gray));
+  border-radius: var(--radius-input);
+  background-color: rgb(var(--theme-background));
+}
+.select::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid rgb(var(--theme-gray));
+  border-bottom: 2px solid rgb(var(--theme-gray));
+  transform: rotate(45deg) translateY(-100%);
+}
+.input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  max-width: 100%;
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-input);
+  text-transform: none;
+  cursor: pointer;
+}
+.input::-ms-expand {
+  display: none;
+}

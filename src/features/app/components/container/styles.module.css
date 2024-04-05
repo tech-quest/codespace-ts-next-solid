@@ -1,0 +1,11 @@
+.root {
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 3rem;
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}
